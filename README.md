@@ -23,8 +23,6 @@ Le site doit être équipé de vérification multiple, côté client et serveur:
 
 * Contrôles sur fichiers (nom, taille, format, ...)
 
-**Le projet devra être terminé début octobre 2016**
-
 ## Particularités
 
 Les demandes d'apprentissages pour les métiers de laboratoires se font auprès d'une autre association, 
@@ -35,6 +33,3 @@ Lorsque la profession d'informaticien est choisie, un choix entre les filières 
 Lorsque la profession de polymécanicien est choisie, un champ upload supplémentaire doit apparaitre pour le certificat de capacité GIM-CH.
 
 ## Améliorations futures
-
-- [x] Renvoyer les valeurs dans les champs du formulaire en cas d'erreurs.
-- [x] Cacher les représentants selon l'age du champs date.
