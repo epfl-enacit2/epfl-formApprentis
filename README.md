@@ -23,6 +23,8 @@ Le site doit être équipé de vérification multiple, côté client et serveur:
 
 * Contrôles sur fichiers (nom, taille, format, ...)
 
+**Le projet devra être terminé début octobre 2016**
+
 ## Particularités
 
 Les demandes d'apprentissages pour les métiers de laboratoires se font auprès d'une autre association, 
