@@ -1,5 +1,5 @@
 <?php
-$isOpen = true;
+$isOpen = false;
 if(!$isOpen){
     header("Location: ./denied.php");
 }
