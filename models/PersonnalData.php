@@ -4,6 +4,9 @@ require_once(__DIR__ . '/../helpers.php');
 class PersonnalData {
     private $postedData;
     private $formations = array(
+    "laborantinBiologie" => "laborantinsBiologie",
+    "laborantinChimie" => "laborantinsChimie",
+    "laborantinPhysique" => "laborantinsPhysique",
     "polyMecanicien" => "Polymecaniciens",
     "informaticien" => "Informaticiens",
     "logisticien" => "Logisticiens",
@@ -16,6 +19,7 @@ class PersonnalData {
     private $dateNow;
     private $rootpath = '\\\\scxdata\\apprentis$\\candidatures\\nouvelles\\';
     public $formation = "";
+    public $lieu = "";
     public $filiere = "";
     public $maturite = "false";
     public $genreApprenti = "";
@@ -42,12 +46,13 @@ class PersonnalData {
     public $anneeCandidature = "";
     public $datePostulation = "";
     public $fichiers = [];
-    
+
     public function __construct($postedData){
         $this->dateNow = date('Y-m-d_H-i-s');
         //Rempli les infos
         $this->postedData = $postedData;
         $this->formation = $postedData['job'];
+        $this->lieu = $postedData['lieu'];
         if($this->formation =="informaticien"){
             $this->filiere = $postedData['filInfo'];
         }
@@ -123,7 +128,7 @@ class PersonnalData {
             $this->connaissancesLinguistiques = [];
         }
     }
-    
+
     public function getPaths(){
         $folderName = $this->dateNow."_".$this->mailApprenti;
         $path = $this->rootpath.$this->formations[$this->formation].'/'.$folderName.'/';
